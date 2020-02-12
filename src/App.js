@@ -18,6 +18,12 @@ export default function App() {
       <form class="App-login">
         <FormGroup>
           <FormLabel>Email</FormLabel>
+          <FormControl 
+            autoFocus 
+            type="email" 
+            value={email} 
+            onChange={e => setEmail(e.target.value)} 
+          />
         </FormGroup>
         <FormGroup>
           <FormLabel>Password</FormLabel>
